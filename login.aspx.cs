@@ -45,7 +45,7 @@ namespace ProjetoFinal
                 Response.Cookies.Add(login);
 
                 //Cria o cookie do id do usuário
-                string IdUserCookie = registro["Id_user"].ToString();
+                string IdUserCookie = registro["Id"].ToString();
                 // Preaparaçao para o Navegador
                 HttpCookie IdUser = new HttpCookie("id_user", IdUserCookie);
                 // Inserção do cookie no navegador
