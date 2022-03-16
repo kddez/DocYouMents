@@ -42,6 +42,15 @@ namespace ProjetoFinal
         protected global::System.Web.UI.WebControls.TextBox tbEmail;
 
         /// <summary>
+        /// Controle regexEmailValid.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexEmailValid;
+
+        /// <summary>
         /// Controle tbSenha.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace ProjetoFinal
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbSenha;
+
+        /// <summary>
+        /// Controle RegularExpressionValidator3.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
 
         /// <summary>
         /// Controle btCadastrar.

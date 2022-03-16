@@ -17,7 +17,7 @@ namespace ProjetoFinal
 
         protected void btCadastrar_Click(object sender, EventArgs e)
         {
-            
+
             //capturar a string de conexão
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
             // Criado pelo SQL Data Source
@@ -38,8 +38,8 @@ namespace ProjetoFinal
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
-            
-           Response.Redirect("~/login.aspx");
+
+            Response.Redirect("~/login.aspx");
         }
     }
 }

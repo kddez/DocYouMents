@@ -27,11 +27,16 @@
           <p> 
             <label for="email_cad">Seu e-mail</label>            
               <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
+              <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+              ControlToValidate="tbEmail" ErrorMessage="Digite um e-mail válido"></asp:RegularExpressionValidator>
           </p>
 
             <p> 
             <label for="senha_cad">Sua Senha</label>            
               <asp:TextBox ID="tbSenha" runat="server"></asp:TextBox>
+              <asp:regularexpressionvalidator id="RegularExpressionValidator3" display="Dynamic" errormessage="A senha deve ter entre 8-10 caracteres com pelo menos uma letra/número."
+              validationexpression="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$" controltovalidate="tbSenha" runat="server">
+                  </asp:regularexpressionvalidator>
           </p>
            
           <p>
