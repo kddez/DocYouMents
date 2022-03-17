@@ -18,13 +18,15 @@
      
     <div class="content">      
       <!--FORMULÁRIO DE LOGIN-->
+
       <div id="login">
         <form id="form1" runat="server">
+            <img id="logo" src="assets/img/logo_64.png" alt="YouMents Logo">
           <h1>Login</h1> 
           <p> 
             <label for="tbEmail">Seu e-mail</label>            
               <!-- O onfocus="this.value=''" -->
-              <asp:TextBox ID="tbEmail" Text="Digite Seu Email" runat="server" onfocus="this.value=''"></asp:TextBox>
+              <asp:TextBox ID="tbEmail" runat="server" onfocus="this.value=''"></asp:TextBox>
           </p>
            
           <p> 

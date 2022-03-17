@@ -1,12 +1,22 @@
-﻿/* CSS reset */
+﻿@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Roboto:wght@300&family=Sansita+Swashed:wght@300&display=swap');
+/* CSS reset */
 *, *:before, *:after {
     margin: 0;
     padding: 0;
     font-family: Arial,sans-serif;
 }
 
+#logo{
+    padding-top:1rem;
+    margin-top: 8px;
+    width: 85px;
+    height: 15px;
+
+}
+
 body {
     margin: 10px;
+   background: rgba(0, 0, 0, .8);
 }
 
 a {
@@ -20,6 +30,7 @@ a {
 
 /* content que contem os formulários */
 .content {
+    padding:2rem 0;
     width: 500px;
     margin: 0px auto;
     position: relative;
@@ -27,13 +38,14 @@ a {
 
 /* formatando o cabeçalho dos formulários */
 h1 {
-    font-size: 48px;
+    font-size: 1.5rem;
     color: #066a75;
-    padding: 10px 0;
-    font-family: Arial,sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 30px;
+    margin-top: 10px;
+    padding: 5px 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    padding-bottom: 15px;
+    color: #000;
 }
 
     h1:after {
@@ -42,8 +54,6 @@ h1 {
         width: 100%;
         height: 2px;
         margin-top: 10px;
-        background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
-        background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
     }
 
 p {
@@ -80,7 +90,7 @@ input {
         width: 95%;
         margin-top: 4px;
         padding: 10px;
-        border: 1px solid #b2b2b2;
+        border: 1px solid #f4f4f4;
         -webkit-border-radius: 3px;
         border-radius: 3px;
         -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
@@ -93,7 +103,7 @@ input {
     input[type="submit"] {
         width: 100% !important;
         cursor: pointer;
-        background: #3d9db3;
+        background: #9617f8;
         padding: 8px 5px;
         color: #fff;
         font-size: 20px;
@@ -106,14 +116,14 @@ input {
     }
 
         input[type="submit"]:hover {
-            background: #4ab3c6;
+            background: #8E47C4;
         }
 
 /*marcando os links para mudar de um formulário para outro */
 .link {
     position: absolute;
-    background: #e1eaeb;
-    color: #7f7c7c;
+    background: #9617f8;
+    color: #fff;
     left: 0px;
     height: 20px;
     width: 440px;
@@ -129,9 +139,9 @@ input {
         font-weight: bold;
         background: #f7f8f1;
         padding: 6px;
-        color: rgb(29, 162, 193);
+        color: #9617f8;
         margin-left: 10px;
-        border: 1px solid #cbd518;
+        border: 1px solid #f4f4f4;
         -webkit-border-radius: 4px;
         border-radius: 4px;
         -webkit-transition: all 0.4s linear;
@@ -139,21 +149,21 @@ input {
     }
 
         .link a:hover {
-            color: #39bfd7;
+            color: #8E47C4;
             background: #f7f7f7;
-            border: 1px solid #4ab3c6;
+            border: 1px solid #f5f5f5;
         }
 
 /* estilos para para ambos os formulários */
 #cadastro,
 #login {
     position: absolute;
-    top: 0px;
+    top: 10rem;
     width: 88%;
     padding: 18px 6% 60px 6%;
     margin: 0 0 35px 0;
     background: rgb(247, 247, 247);
-    border: 1px solid rgba(147, 184, 189,0.8);
+    border: 1px solid #fff;
     -webkit-box-shadow: 5px;
     border-radius: 5px;
     -webkit-animation-duration: 0.5s;
@@ -228,3 +238,5 @@ input {
         transform: translateX(-20px);
     }
 }
+
+
