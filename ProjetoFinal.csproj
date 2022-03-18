@@ -80,8 +80,14 @@
     <Content Include="assets\img\logo_64.png" />
     <Content Include="cadastro.aspx" />
     <Content Include="contacts.aspx" />
+    <Content Include="css\about.css" />
+    <Content Include="css\enviar.css" />
+    <Content Include="css\gerenciar.css" />
     <Content Include="css\global.css" />
+    <Content Include="css\index.css" />
     <Content Include="css\logincad.css" />
+    <Content Include="css\logs.css" />
+    <Content Include="css\perfil.css" />
     <Content Include="index.aspx" />
     <Content Include="js\global.js" />
     <Content Include="log.aspx" />
@@ -89,7 +95,6 @@
     <Content Include="logout.aspx" />
     <Content Include="perfil.aspx" />
     <Content Include="SQLDataSources.aspx" />
-    <Content Include="teste.aspx" />
     <Content Include="upload.aspx" />
     <Content Include="UploadDeArquivo.aspx" />
     <Content Include="Web.config" />
@@ -165,13 +170,6 @@
     </Compile>
     <Compile Include="SQLDataSources.aspx.designer.cs">
       <DependentUpon>SQLDataSources.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="teste.aspx.cs">
-      <DependentUpon>teste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="teste.aspx.designer.cs">
-      <DependentUpon>teste.aspx</DependentUpon>
     </Compile>
     <Compile Include="upload.aspx.cs">
       <DependentUpon>upload.aspx</DependentUpon>

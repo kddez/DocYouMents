@@ -1,0 +1,57 @@
+﻿body {
+}
+
+h1 {
+    justify-content: flex-start;
+}
+
+#login{
+    padding-left:1rem;
+    display:flex;
+    padding-top: 3%;
+}
+
+input:not([type="checkbox"]) {
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #f4f4f4;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+input[type="submit"] {
+    background-color: #f4f4f4;
+    color: #9617f8;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+    input[type="submit"]:hover {
+        background-color: #9617f8;
+        color: white;
+    }
+
+p{
+    display:flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+input {
+    margin-left: 0;
+    padding-left: 0;
+    outline:none;
+}
+
+label {
+    color: #405c60;
+}
+

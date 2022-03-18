@@ -1,16 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SitePage.Master" AutoEventWireup="true" CodeBehind="UploadDeArquivo.aspx.cs" Inherits="ProjetoFinal.UploadDeArquivo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" type="text/css" href="css/enviar.css" />
     <title>Up Load De Arquivo</title>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
           <form id="Form1" method="post" runat="server" enctype="multipart/form-data" action="UploadDeArquivo.aspx">
-         Arquivo Enviado para o servidor: <input id="oFile" type="file" runat="server" name="oFile">
+         <input id="oFile" type="file" runat="server" name="oFile">
          <asp:button id="btnUpload" type="submit" text="Upload" runat="server"></asp:button>
          <asp:Panel ID="frmConfirmation" Visible="False" Runat="server">
             <asp:Label id="lblUploadResult" Runat="server"></asp:Label>
-             <br />
          </asp:Panel>
       </form>
 
