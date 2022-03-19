@@ -42,12 +42,12 @@ namespace ProjetoFinal
         protected global::System.Web.UI.WebControls.TextBox tbSenha;
 
         /// <summary>
-        /// Controle btnlogar.
+        /// Controle cconteiner.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogar;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cconteiner;
     }
 }

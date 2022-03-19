@@ -84,7 +84,6 @@
     <Content Include="css\enviar.css" />
     <Content Include="css\gerenciar.css" />
     <Content Include="css\global.css" />
-    <Content Include="css\index.css" />
     <Content Include="css\logincad.css" />
     <Content Include="css\logs.css" />
     <Content Include="css\perfil.css" />

@@ -42,7 +42,7 @@
           </p>
            
           <p>
-              <asp:Button ID="btCadastrar" runat="server" Text="Cadastrar" OnClick="btCadastrar_Click" />
+              <asp:Button CssClass="btnCadastrar" ID="btCadastrar" runat="server" Text="Cadastrar" OnClick="btCadastrar_Click" />
           </p>
            
           <p class="link">  

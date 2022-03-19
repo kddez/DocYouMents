@@ -10,6 +10,7 @@ namespace ProjetoFinal
 {
     public partial class logincad : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -66,6 +67,20 @@ namespace ProjetoFinal
                 // Alert Javascript
                 Response.Write("<script> alert('Email ou Senha Incorretos!');</script>");
             }
+
+
         }
+
+        protected void actCookie_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+
     }
 }
+
+
+

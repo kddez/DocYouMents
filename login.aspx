@@ -11,7 +11,8 @@
 </head>
 <body>
     
-    
+    <form id="form1" runat="server">
+
   <div class="container" >
     <a class="links" id="paracadastro"></a>
     <a class="links" id="paralogin"></a>
@@ -20,7 +21,6 @@
       <!--FORMULÁRIO DE LOGIN-->
 
       <div id="login">
-        <form id="form1" runat="server">
             <img id="logo" src="assets/img/logo_64.png" alt="YouMents Logo">
           <h1>Login</h1> 
           <p> 
@@ -36,15 +36,28 @@
           </p>
                     
           <p> 
-            <asp:Button ID="btnlogar" runat="server" Text="Logar" OnClick="btnlogar_Click" /> 
+            <asp:Button CssClass="btnLogar" runat="server" Text="Logar" OnClick="btnlogar_Click" /> 
           </p>
            
           <p class="link">
             Ainda não tem conta?
             <a href="cadastro.aspx">Cadastre-se</a>
           </p>
-        </form>
       </div>
+        </div>
+      </div>
+
+        <div id="cconteiner" class="cookies-container" runat="server">
+    <div class="cookies-content">
+      <p>Permito o uso de cookies para:</p>
+      <div class="cookies-pref">
+        <label class="label1"><input type="checkbox"  checked-data-function="analytics"/>Análise de Uso</label>
+        <label class="label1"><input type="checkbox"  checked-data-function="marketing"/>Marketing</label>
+      </div>
+      <asp:button runat="server" Text="Aceitar"  class="cookies-save" OnClick="actCookie_Click" ></asp:button>
+    </div>
+  </div>
+        </form>
   
 </body>
 </html>
