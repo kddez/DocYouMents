@@ -42,6 +42,15 @@ namespace ProjetoFinal
         protected global::System.Web.UI.WebControls.TextBox tbSenha;
 
         /// <summary>
+        /// Controle txtavs.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtavs;
+
+        /// <summary>
         /// Controle cconteiner.
         /// </summary>
         /// <remarks>

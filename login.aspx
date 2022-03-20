@@ -22,28 +22,30 @@
       <!--FORMULÁRIO DE LOGIN-->
 
       <div id="login">
-            <img id="logo" src="assets/img/logo_64.png" alt="YouMents Logo">
+
+            <img id="logo" src="assets/img/logo_64.png" alt="YouMents Logo"/>
+
           <h1>Login</h1> 
+
+                 <p> 
+            <label class="labelcss" for="tbEmail">Seu e-mail</label>            
+              <asp:TextBox CssClass="txtcss" ID="tbEmail" runat="server" onfocus="this.value=''"></asp:TextBox>
+                </p>
+                <p> 
+              <label class="labelcss" for="tbSenha">Sua Senha</label>
+              <asp:TextBox CssClass="txtcss" ID="tbSenha" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:Label ID="txtavs" runat="server"></asp:Label>
+               </p>
+
           <p> 
-            <label for="tbEmail">Seu e-mail</label>            
-              <!-- O onfocus="this.value=''" -->
-              <asp:TextBox ID="tbEmail" runat="server" onfocus="this.value=''"></asp:TextBox>
-          </p>
-           
-          <p> 
-            <label for="tbSenha">Sua Senha</label>
-            
-              <asp:TextBox ID="tbSenha" runat="server" TextMode="Password"></asp:TextBox>
-          </p>
-                    
-          <p> 
-            <asp:Button CssClass="btnLogar" runat="server" Text="Logar" OnClick="btnlogar_Click" /> 
+          <asp:Button CssClass="btnLogar" runat="server" Text="Logar" OnClick="btnlogar_Click" /> 
           </p>
            
           <p class="link">
-            Ainda não tem conta?
+             Ainda não tem conta?
             <a href="cadastro.aspx">Cadastre-se</a>
           </p>
+
       </div>
         </div>
       </div>
@@ -52,8 +54,8 @@
     <div class="cookies-content">
       <p>Permito o uso de cookies para:</p>
       <div class="cookies-pref">
-        <label class="label1"><input type="checkbox"  checked-data-function="analytics"/>Análise de Uso</label>
-        <label class="label1"><input type="checkbox"  checked-data-function="marketing"/>Marketing</label>
+        <label class="labelcss" ><input type="checkbox"  checked-data-function="analytics"/>Análise de Uso</label>
+        <label class="labelcss"><input type="checkbox"  checked-data-function="marketing"/>Marketing</label>
       </div>
       <asp:button runat="server" Text="Aceitar"  class="cookies-save" OnClick="actCookie_Click" ></asp:button>
     </div>

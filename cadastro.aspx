@@ -23,25 +23,28 @@
           <h1>Cadastre-se no Youments</h1> 
            
           <p> 
-            <label for="nome_cad">Nome</label>
-              <asp:TextBox ID="tbNome" runat="server"></asp:TextBox>
+            <label class="labelcss" for="nome_cad">Nome</label>
+              <asp:TextBox CssClass="txtcss" ID="tbNome" runat="server"></asp:TextBox>
           </p>
            
           <p> 
-            <label for="email_cad">E-mail</label>            
-              <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
+            <label class="labelcss" for="email_cad">E-mail</label>            
+              <asp:TextBox CssClass="txtcss" ID="tbEmail" runat="server"></asp:TextBox>
               <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
               ControlToValidate="tbEmail" ErrorMessage="Digite um e-mail válido"></asp:RegularExpressionValidator>
-                <asp:Label ID="msg" runat="server"></asp:Label>
-          </p>
+                </p>
 
             <p> 
-            <label for="senha_cad">Senha</label>            
-              <asp:TextBox ID="tbSenha" runat="server"></asp:TextBox>
+            <label class="labelcss" for="senha_cad">Senha</label>            
+              <asp:TextBox CssClass="txtcss" ID="tbSenha" runat="server"></asp:TextBox>
               <asp:regularexpressionvalidator id="RegularExpressionValidator3" display="Dynamic" errormessage="A senha deve ter entre 8-10 caracteres com pelo menos uma letra/número."
               validationexpression="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$" controltovalidate="tbSenha" runat="server">
                   </asp:regularexpressionvalidator>
           </p>
+
+
+                <asp:Label ID="msg" runat="server"></asp:Label>
+
            
           <p>
               <asp:Button CssClass="btnCadastrar" ID="btCadastrar" runat="server" Text="Cadastrar" OnClick="btCadastrar_Click" />

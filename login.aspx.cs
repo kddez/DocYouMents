@@ -18,6 +18,8 @@ namespace ProjetoFinal
 
         protected void btnlogar_Click(object sender, EventArgs e)
         {
+
+
             String email = tbEmail.Text;
             String senha = tbSenha.Text;
             //
@@ -64,23 +66,19 @@ namespace ProjetoFinal
             }
             else
             {
-                // Alert Javascript
-                Response.Write("<script> alert('Email ou Senha Incorretos!');</script>");
-            }
+                if (tbEmail.Text == string.Empty && tbSenha.Text == string.Empty)
+                {
+                    txtavs.Text = "*Preencha todos os campos";
+                }
 
+            }
 
         }
 
         protected void actCookie_Click(object sender, EventArgs e)
         {
 
-
-
         }
-
 
     }
 }
-
-
-

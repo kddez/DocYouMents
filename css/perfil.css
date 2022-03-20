@@ -5,9 +5,9 @@ h1 {
     justify-content: flex-start;
 }
 
-#login{
-    padding-left:1rem;
-    display:flex;
+#login {
+    padding-left: 1rem;
+    display: flex;
     padding-top: 3%;
 }
 
@@ -39,8 +39,8 @@ input[type="submit"] {
         color: white;
     }
 
-p{
-    display:flex;
+p {
+    display: flex;
     flex-direction: column;
     gap: .5rem;
 }
@@ -48,10 +48,9 @@ p{
 input {
     margin-left: 0;
     padding-left: 0;
-    outline:none;
+    outline: none;
 }
 
 label {
     color: #405c60;
 }
-

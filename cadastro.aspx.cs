@@ -35,38 +35,49 @@ namespace ProjetoFinal
         }
         protected void btCadastrar_Click(object sender, EventArgs e)
         {
-
-            try { 
-            //capturar a string de conexão
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
-            // Criado pelo SQL Data Source
-            System.Configuration.ConnectionStringSettings connString;
-            connString = rootWebConfig.ConnectionStrings.ConnectionStrings["ConnectionString"];
-            //cria um objeto de conexão
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = connString.ToString();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            // Chamada da Inserção pelo SQL insert, escolha da tabela into, campos (nome,email,senha) e variáveis (@nome,@email,@senha)
-            cmd.CommandText = "Insert into usuario (nome,email,senha) values (@nome,@email,@senha)";
-
-            // Varáveis do banco de dados iniciado por @ arroba
-            cmd.Parameters.AddWithValue("nome", tbNome.Text);
-            cmd.Parameters.AddWithValue("email", tbEmail.Text);
-            cmd.Parameters.AddWithValue("senha", tbSenha.Text);
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-
-            Response.Redirect("~/login.aspx");
-            }
-            catch
+            if (tbEmail.Text != string.Empty
+               && tbSenha.Text != string.Empty
+               && tbNome.Text != string.Empty)
             {
-                msg.Text = "Este email já está sendo utilizado";
+                try
+                {
+                    //capturar a string de conexão
+                    System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
+                    // Criado pelo SQL Data Source
+                    System.Configuration.ConnectionStringSettings connString;
+                    connString = rootWebConfig.ConnectionStrings.ConnectionStrings["ConnectionString"];
+                    //cria um objeto de conexão
+                    SqlConnection con = new SqlConnection();
+                    con.ConnectionString = connString.ToString();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = con;
+                    // Chamada da Inserção pelo SQL insert, escolha da tabela into, campos (nome,email,senha) e variáveis (@nome,@email,@senha)
+                    cmd.CommandText = "Insert into usuario (nome,email,senha) values (@nome,@email,@senha)";
+
+                    // Varáveis do banco de dados iniciado por @ arroba
+                    cmd.Parameters.AddWithValue("nome", tbNome.Text);
+                    cmd.Parameters.AddWithValue("email", tbEmail.Text);
+                    cmd.Parameters.AddWithValue("senha", tbSenha.Text);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+                    Response.Redirect("~/login.aspx");
+                }
+                catch
+                {
+                    msg.Text = "Este email já está sendo utilizado";
+                }
             }
+            else
+            {
+                msg.Text = "*Preencha todos os campos";
+            }
+
+
         }
 
     }
 
-    
+
 }

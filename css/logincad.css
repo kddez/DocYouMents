@@ -6,12 +6,11 @@
     font-family: Arial,sans-serif;
 }
 
-#logo{
-    padding-top:1rem;
+#logo {
+    padding-top: 1rem;
     margin-top: 8px;
     width: 85px;
     height: 15px;
-
 }
 
 
@@ -35,7 +34,7 @@ a {
 
 /* content que contem os formulários */
 .content {
-    padding:2rem 0;
+    padding: 2rem 0;
     width: 500px;
     margin: 0px auto;
     position: relative;
@@ -69,7 +68,7 @@ p {
         margin: 0px;
     }
 
-label {
+.labelcss {
     color: #405c60;
     position: relative;
     padding-top: 5px;
@@ -92,20 +91,20 @@ input {
     outline: none;
 }
 
-    input:not([type="checkbox"]) {
-        width: 95%;
-        margin-top: 4px;
-        padding: 10px;
-        border: 1px solid #f4f4f4;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-        -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-        -webkit-transition: all 0.2s linear;
-        transition: all 0.2s linear;
-    }
+.txtcss {
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;
+    border: 1px solid #f4f4f4;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
 
-    /*estilo do botão submit */
+/*estilo do botão submit */
 .btnLogar, .btnCadastrar {
     width: 100% !important;
     cursor: pointer;
@@ -121,9 +120,9 @@ input {
     transition: all 0.2s linear;
 }
 
-        .btnLogar:hover, .btnCadastrar:hover {
-            background: #8E47C4;
-        }
+    .btnLogar:hover, .btnCadastrar:hover {
+        background: #8E47C4;
+    }
 
 /*marcando os links para mudar de um formulário para outro */
 .link {
@@ -307,7 +306,7 @@ p {
     }
 }
 
-#tbNome{
+#tbNome {
     margin-bottom: 2rem;
 }
 
@@ -316,6 +315,11 @@ p {
     margin-bottom: 1rem;
 }
 
-#msg {
+#msg, #txtavs {
+    padding-left: 7.8rem;
     color: red;
+}
+
+.txtcss {
+    padding-bottom: 1rem;
 }
