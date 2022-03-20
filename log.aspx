@@ -136,7 +136,7 @@
             </tr>
         </SelectedItemTemplate>
     </asp:ListView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [tipo_log], [data], [titulo_documento], [id_usuario], [Id_log] FROM [log] WHERE ([id_usuario] = @id_usuario)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [tipo_log], [data], [titulo_documento], [id_usuario], [Id_log] FROM [log] WHERE ([id_usuario] = @id_usuario)" OnSelecting="SqlDataSource1_Selecting">
         <SelectParameters>
             <asp:CookieParameter CookieName="login" Name="id_usuario" Type="String" />
         </SelectParameters>

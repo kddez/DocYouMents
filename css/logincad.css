@@ -14,6 +14,7 @@
 
 }
 
+
 body {
     background-image: linear-gradient(#9617f8, #f4f4f4);
     height: auto;
@@ -71,6 +72,7 @@ p {
 label {
     color: #405c60;
     position: relative;
+    padding-top: 5px;
 }
 
 /**** advanced input styling ****/
@@ -305,4 +307,15 @@ p {
     }
 }
 
+#tbNome{
+    margin-bottom: 2rem;
+}
 
+
+#tbEmail {
+    margin-bottom: 1rem;
+}
+
+#msg {
+    color: red;
+}

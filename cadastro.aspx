@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
           <title>Formulário de Login e Registro com HTML5 e CSS3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="shortcut icon" href="assets/img/logo_512.png" type="image/png"/>
   <link rel="stylesheet" type="text/css" href="css/logincad.css" />
 </head>
 <body>
@@ -31,6 +32,7 @@
               <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
               <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
               ControlToValidate="tbEmail" ErrorMessage="Digite um e-mail válido"></asp:RegularExpressionValidator>
+                <asp:Label ID="msg" runat="server"></asp:Label>
           </p>
 
             <p> 
@@ -53,6 +55,23 @@
       </div>
     </div>
   </div>
+
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [usuario] WHERE [email] = @email" InsertCommand="INSERT INTO [usuario] ([email], [senha], [nome]) VALUES (@email, @senha, @nome)" SelectCommand="SELECT [Id], [email], [senha], [nome] FROM [usuario]" UpdateCommand="UPDATE [usuario] SET [Id] = @Id, [senha] = @senha, [nome] = @nome WHERE [email] = @email">
+        <DeleteParameters>
+            <asp:Parameter Name="email" Type="String" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="email" Type="String" />
+            <asp:Parameter Name="senha" Type="String" />
+            <asp:Parameter Name="nome" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Id" Type="Int32" />
+            <asp:Parameter Name="senha" Type="String" />
+            <asp:Parameter Name="nome" Type="String" />
+            <asp:Parameter Name="email" Type="String" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 
 </body>
 </html>

@@ -4,6 +4,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Text;
+using System.Security.Cryptography;
 using System.Web.UI.WebControls;
 
 namespace ProjetoFinal
@@ -15,9 +17,26 @@ namespace ProjetoFinal
 
         }
 
+        public static String sha256_hash(String value)
+        {
+            StringBuilder Sb = new StringBuilder();
+
+            using (SHA256 hash = SHA256Managed.Create())
+            {
+                Encoding enc = Encoding.UTF8;
+                Byte[] result = hash.ComputeHash(enc.GetBytes(value));
+
+                foreach (Byte b in result)
+                    Sb.Append(b.ToString("2x"));
+            }
+
+            return Sb.ToString();
+
+        }
         protected void btCadastrar_Click(object sender, EventArgs e)
         {
 
+            try { 
             //capturar a string de conexão
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
             // Criado pelo SQL Data Source
@@ -40,6 +59,14 @@ namespace ProjetoFinal
             con.Close();
 
             Response.Redirect("~/login.aspx");
+            }
+            catch
+            {
+                msg.Text = "Este email já está sendo utilizado";
+            }
         }
+
     }
+
+    
 }

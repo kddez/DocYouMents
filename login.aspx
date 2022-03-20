@@ -6,7 +6,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <title>Formulário de Login e Registro com HTML5 e CSS3</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/logo_512.png" type="image/png"/>
   <link rel="stylesheet" type="text/css" href="css/logincad.css" />
 </head>
 <body>
