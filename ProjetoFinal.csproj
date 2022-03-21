@@ -81,6 +81,7 @@
     <Content Include="cadastro.aspx" />
     <Content Include="contacts.aspx" />
     <Content Include="css\about.css" />
+    <Content Include="css\contacts.css" />
     <Content Include="css\enviar.css" />
     <Content Include="css\gerenciar.css" />
     <Content Include="css\global.css" />
