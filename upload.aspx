@@ -5,11 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
         
-        <hr />
-        <asp:FileUpload ID="FileUpload1" runat="server" />
-        <asp:Button ID="btnEnviarArquivo" runat="server" Text="Enviar Arquivo" OnClick="EnviarArquivo" />
-        <br /> <asp:Label ID="lblmsg" runat="server" Text="Label"></asp:Label><br />
-        <hr />
+        <br /> <asp:Label ID="lblmsg" runat="server"></asp:Label><br />
         <asp:GridView ID="gvArquivos" runat="server" AutoGenerateColumns="false" EmptyDataText = "Nenhum arquivo enviado" Width="321px">
             <Columns>
                 <asp:BoundField DataField="Text" HeaderText="Nome do Arquivo" />
@@ -25,5 +21,7 @@
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+        <asp:Label ID="ltrCookie" runat="server" Visible="false"></asp:Label>
     </form>
 </asp:Content>

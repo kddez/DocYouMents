@@ -115,3 +115,4 @@ C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.csproj.CoreCompileInp
 C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.csproj.CopyComplete
 C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.dll
 C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.pdb
+C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.csproj.AssemblyReference.cache

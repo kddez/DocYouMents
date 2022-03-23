@@ -43,7 +43,7 @@ namespace ProjetoFinal
         private void btnUpload_Click(object sender, System.EventArgs e)
         {
             // Nome do Arquivo
-            string strFileName;
+             string strFileName;
             // Caminho do Arquivo
             string strFilePath;
             // Diretório do Arquivo

@@ -100,11 +100,11 @@
                     <td runat="server">
                         <table id="itemPlaceholderContainer" runat="server" border="0" style="">
                             <tr runat="server" style="">
-                                <th runat="server">tipo_log</th>
-                                <th runat="server">data</th>
-                                <th runat="server">titulo_documento</th>
-                                <th runat="server">id_usuario</th>
-                                <th runat="server">Id_log</th>
+                                <th runat="server">Ação </th>
+                                <th runat="server">Data</th>
+                                <th runat="server">Nome do documento</th>
+                                <th runat="server">Usuário</th>
+                                <th runat="server">ID</th>
                             </tr>
                             <tr id="itemPlaceholder" runat="server">
                             </tr>
