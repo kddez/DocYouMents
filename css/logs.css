@@ -1,2 +1,6 @@
-﻿#form1{
+﻿.wrap{
+    display: flex;
+    align-items: center;
+    top: 50%;
+    width: 100%;
 }

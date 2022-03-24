@@ -100,6 +100,7 @@ main {
 
 .wrap > header {
     background: rgba(0, 0, 0, .8);
+    width: 100%;
 }
 /*Nav em telas menores*/
 div.header {

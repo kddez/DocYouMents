@@ -44,7 +44,7 @@ namespace ProjetoFinal
                 Response.ContentType = ContentType;
                 Response.AppendHeader("Content-Disposition", "attachment; filename=" + Path.GetFileName(caminhoArquivo));
                 Response.WriteFile(caminhoArquivo);
-                string nomedoc = caminhoArquivo.Trim(' ');
+                string nomedoc = caminhoArquivo;
                 //capturar a string de conexão
                 System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
                 System.Configuration.ConnectionStringSettings connString3;
@@ -95,7 +95,7 @@ namespace ProjetoFinal
 
         protected void DeletarArquivo(object sender, EventArgs e)
         {
-            
+
             try
             {
 
@@ -131,7 +131,7 @@ namespace ProjetoFinal
                 cmd3.CommandText = "Insert into log (id_usuario,titulo_documento,tipo_log) values (@id_usuario,@titulo_documento,@tipo_log)";
                 // Passagem dos valores das variáveis
                 cmd3.Parameters.AddWithValue("id_usuario", ltrCookie.Text);
-                cmd3.Parameters.AddWithValue("titulo_documento", "WordPress.PDF");
+                cmd3.Parameters.AddWithValue("titulo_documento", "Documento.aspx");
                 cmd3.Parameters.AddWithValue("tipo_log", "Exclusão");
                 con3.Open();
                 cmd3.ExecuteNonQuery();
@@ -188,6 +188,11 @@ namespace ProjetoFinal
         protected void btnLer_Click(object sender, EventArgs e)
         {
             getPropriedadesCookie("login");
+        }
+
+        protected void gvArquivos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
