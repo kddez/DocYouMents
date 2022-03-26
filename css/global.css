@@ -13,7 +13,7 @@
  */
 
 :root {
-    --font-family: helvetica;
+    --font-family:'Roboto', sans-serif;
     --font-size: 16px;
     --bg-color: rgb(0, 14, 36);
     --max-width: 1024px;
@@ -68,7 +68,7 @@ a {
 
 /* Fundo da página */
 body {
-    background-color: #000;
+    background-color: #fff;
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -99,7 +99,8 @@ main {
 /* Cabeçalho <header> */
 
 .wrap > header {
-    background: rgba(0, 0, 0, .8);
+    background: #272b33;
+    width: 100%;
 }
 /*Nav em telas menores*/
 div.header {
@@ -127,6 +128,7 @@ div.header {
     color: white;
     transition: .2s;
     text-decoration: none;
+    font-size: 95%;
 }
 
 /* Responsividade do cabeçalho
@@ -139,6 +141,7 @@ div.header {
     .wrap > header {
         display: flex;
         align-items: center;
+        background: rgba(0, 0, 0, .8);
     }
 
         div.header img {
@@ -176,7 +179,7 @@ div.nav {
     display: flex;
     flex-direction: column;
     min-width: 0;
-    box-shadow: -4px 6px 5px 0px #000;
+    box-shadow: -4px 4px 5px 0px #f4f4f4;
     border-bottom-left-radius: .35rem;
     transition: .1s;
     /* Tempo da animação */
@@ -257,7 +260,7 @@ div.nav {
 div.main {
     position: relative;
     height: 100%;
-    background: #000;
+    background: #fff;
     top: 0px;
     left: 0px;
 }

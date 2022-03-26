@@ -111,8 +111,8 @@ C:\Users\55219\Projetos\DocYouMents\bin\roslyn\VBCSCompiler.exe
 C:\Users\55219\Projetos\DocYouMents\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\55219\Projetos\DocYouMents\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\55219\Projetos\DocYouMents\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.csproj.AssemblyReference.cache
 C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.csproj.CoreCompileInputs.cache
 C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.csproj.CopyComplete
 C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.dll
 C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.pdb
+C:\Users\55219\Projetos\DocYouMents\obj\Debug\ProjetoFinal.csproj.AssemblyReference.cache
