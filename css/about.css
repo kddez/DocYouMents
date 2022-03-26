@@ -1,2 +1,28 @@
-﻿body {
+﻿@media (min-width:768px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: #9617f8;
+    }
+    
+    ul{
+        margin: 0;
+    }
+}
+
+.conteiner {
+    
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+    font-size: 14px;
+    width: 97%;
+}
+
+h1 {
+   color: #9617f8;
 }
