@@ -6,7 +6,7 @@
 
 <h3><strong>Sobre o projeto:</strong>
 </h3>
-<p>Se trata de um gestor de documentos. Nossa intenção é que você possa adicionar arquivos ao sistema e, quando desejar, possa baixar em outros computadores. Todas as suas operações ficarão registradas em nosso banco de dados e poderão ser visualizadas através da nossa página de "logs"</p>.
+<p>Se trata de um gestor de documentos. Nossa intenção é que você possa adicionar arquivos ao sistema e, quando desejar, possa baixar em outros computadores. Todas as suas operações ficarão registradas em nosso banco de dados e poderão ser visualizadas através da nossa página de "logs".</p>
 
 
  <h3><strong>Linguagens:</strong></h3>
