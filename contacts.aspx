@@ -6,7 +6,7 @@
     <form id="form1" runat="server">
 
     <div action="submit" runat="server" class="conteiner" method="post" >
-    <h3>Faça contato conosco</h3>
+    <h3>Faça contato</h3>
             
         <div runat="server" class="contact">
 
@@ -27,7 +27,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="subcontact"></asp:RequiredFieldValidator>
 
             <label class="label-contact">Mensagem</label>
-            <asp:TextBox ID="messagecontact" CssClass="txtcss" runat="server" Rows="5" Columns="50" textmode="MultiLine"></asp:TextBox>
+            <asp:TextBox ID="messagecontact" CssClass="txtcss" runat="server" Rows="3" Columns="50" textmode="MultiLine"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="messagecontact"></asp:RequiredFieldValidator>
 
             <asp:Button ID="send" runat="server" CssClass="btncss" OnClick="btnSend_Click" Text="Enviar" />

@@ -12,8 +12,11 @@
 </head>
 <body>
     
-    <form id="form1" runat="server">
+    
 
+    <form id="form1" runat="server">
+        
+        <div class="wrap">
   <div class="container" >
     <a class="links" id="paracadastro"></a>
     <a class="links" id="paralogin"></a>
@@ -24,7 +27,7 @@
       <div id="login">
 
             <img id="logo" src="assets/img/logo_64.png" alt="YouMents Logo"/>
-
+            
           <h1>Login</h1> 
 
                  <p> 
@@ -32,7 +35,7 @@
               <asp:TextBox CssClass="txtcss" ID="tbEmail" runat="server" onfocus="this.value=''"></asp:TextBox>
                 </p>
                 <p> 
-              <label class="labelcss" for="tbSenha">Sua Senha</label>
+              <label class="labelcss" for="tbSenha">Sua senha</label>
               <asp:TextBox CssClass="txtcss" ID="tbSenha" runat="server" TextMode="Password"></asp:TextBox>
                     <asp:Label ID="txtavs" runat="server"></asp:Label>
                </p>
@@ -60,6 +63,7 @@
       <asp:button runat="server" Text="Aceitar"  class="cookies-save" OnClick="actCookie_Click" ></asp:button>
     </div>
   </div>
+            </div>
         </form>
   
 </body>

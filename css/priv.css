@@ -1,0 +1,23 @@
+﻿@media (min-width:768px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+}
+a{
+        color: darkviolet;
+}
+
+    a:hover {
+        outline: none;
+        text-decoration: none;
+        color:  blueviolet;
+    }
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+    font-size: 14px;
+    width: 97%;
+}

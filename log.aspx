@@ -3,10 +3,10 @@
     <link rel="stylesheet" type="text/css" href="css/logs.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form CssClass="wrap" id="form1" runat="server">
+    <form id="form1" runat="server">
     <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id_log" DataSourceID="SqlDataSource1">
         <AlternatingItemTemplate>
-            <tr style= " background:#272b33; color:white;"  >
+            <tr style= " background:#272b33; color:white; " >
                 <td>
                     <asp:Label ID="tipo_logLabel" runat="server" Text='<%# Eval("tipo_log") %>' />
                 </td>

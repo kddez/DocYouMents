@@ -6,7 +6,7 @@ h1 {
 }
 
 #login {
-    padding-left: 1rem;
+    padding-left: 2.5rem;
     display: flex;
     padding-top: 3%;
 }
@@ -53,4 +53,10 @@ input {
 
 label {
     color: #405c60;
+}
+
+@media(min-width: 520px){
+    #login{
+        margin-left: 20rem;
+    }
 }

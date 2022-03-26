@@ -33,9 +33,25 @@
 .label-contact {
     color: #405c60;
     position: relative;
-    padding: 5px;
 }
 
-contact {
-    padding-left: 5rem;
+h3 {
+    padding-left: 10px;
+    display: inline-block;
+}
+.contact {
+    padding-left: 10px;
+    width: 300px;
+}
+
+@media (min-width: 520px){
+    h3 {
+        font-size: 2rem;
+        margin-left: 15rem;
+        display: inline-block;
+    }
+    .contact {
+        margin-left: 15rem;
+        width: 450px;
+    }
 }

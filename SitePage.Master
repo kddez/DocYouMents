@@ -39,7 +39,7 @@
         <nav>
 
             <div id="mainMenu" class="nav menu-closed">
-                <a href="index.aspx" title="Página incial">
+                <a href="index.aspx" title="Página inicial">
                     <i class="fas fa-home fa-fw"></i><span>Início</span>
                 </a>
                 <a href="upload.aspx" title="Gerenciar documentos">
@@ -51,11 +51,15 @@
                 <a href="contacts.aspx" title="Faça contato">
                     <i class="fas fa-comments fa-fw"></i><span>Contatos</span>
                 </a>
-                <a href="about.aspx" title="Sobre o App">
+                <a href="about.aspx" title="Sobre nós">
                     <i class="fas fa-info-circle fa-fw"></i><span>Sobre</span>
                 </a>
 
-                <a href="log.aspx" title="Seu perfil">
+                 
+                <a href="priv.aspx" title="Políticas de Privacidade">
+                <i class="fas fa-lock fa-fw"></i><span>Políticas de Privacidade</span>
+                    </a>
+                <a href="log.aspx" title="Logs">
                     <i class="fas fa-list fa-fw"></i><span>Logs</span>
                 </a>  
 
@@ -65,17 +69,17 @@
                 
                 <a href="#" onclick="logout()" title="Sair">
                     <i class="fas fa-exclamation fa-fw"></i><span>Sair</span>
-                </a> 
+               </a> 
                 
                         <script>
                             function logout() {
-                                let text = "Deseja Sair?\n Sim ou Não.";
+                                let text = "Deseja Sair?";
                                 if (confirm(text) == true) {
                                     window.location.href = "logout.aspx";
                                 }
                             }
                         </script>
-                
+                </div>
         </nav>
 
 
@@ -98,7 +102,6 @@
         </main>
 
         <footer>
-
             <div class="footer">
 
                 <div class="footer-top">
@@ -109,10 +112,10 @@
 
 
                 </div>
+        </footer>
 
             </div>
-    </footer>
-        
+  
 
 
     <script src="js/global.js"></script>

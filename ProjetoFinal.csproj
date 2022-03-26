@@ -88,6 +88,7 @@
     <Content Include="css\logincad.css" />
     <Content Include="css\logs.css" />
     <Content Include="css\perfil.css" />
+    <Content Include="css\priv.css" />
     <Content Include="index.aspx" />
     <Content Include="js\global.js" />
     <Content Include="log.aspx" />
@@ -98,6 +99,7 @@
     <Content Include="upload.aspx" />
     <Content Include="UploadDeArquivo.aspx" />
     <Content Include="Web.config" />
+    <Content Include="priv.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -184,6 +186,13 @@
     </Compile>
     <Compile Include="UploadDeArquivo.aspx.designer.cs">
       <DependentUpon>UploadDeArquivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="priv.aspx.cs">
+      <DependentUpon>priv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="priv.aspx.designer.cs">
+      <DependentUpon>priv.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

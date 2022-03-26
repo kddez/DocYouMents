@@ -1,5 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Roboto:wght@300&family=Sansita+Swashed:wght@300&display=swap');
 /* CSS reset */
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -323,3 +324,4 @@ p {
 .txtcss {
     padding-bottom: 1rem;
 }
+

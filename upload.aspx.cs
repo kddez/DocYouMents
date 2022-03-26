@@ -194,5 +194,10 @@ namespace ProjetoFinal
         {
 
         }
+
+        protected void gvArquivos_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
