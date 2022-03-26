@@ -11,26 +11,26 @@
 
  <h3><strong>Linguagens:</strong></h3>
 <ul>
- <li>HTML5</li>
- <li>CSS3</li>
- <li>JavaScript 1.8.5</li>
- <li>C#</li>
- <li>ASP.NET</li>
- <li>SQL</li>
+ <li>HTML5;</li>
+ <li>CSS3;</li>
+ <li>JavaScript 1.8.5;</li>
+ <li>C#;</li>
+ <li>ASP.NET;</li>
+ <li>SQL.</li>
 </ul>
 
  <h3><strong>Ferramentas:</strong></h3>
 <ul>
- <li>Visual Studio Code 1.65.2</li>
- <li>Visual Studio 2019</li>
- <li>SQLServer 2017</li>
+ <li>Visual Studio Code 1.65.2;</li>
+ <li>Visual Studio 2019;</li>
+ <li>SQLServer 2017.</li>
 </ul>
 
 <h3><strong>Participantes:</strong></h3>
 <ul>
- <li>Marcos Vinicius(https://github.com/kddez)</li>
- <li>Yuri Moura(https://github.com/Moura-yuri)</li>
- <li>Renan Silva(https://github.com/RSilva)</li>
- <li>Renan Gonzaga(https://github.com/GonzagaRe)
+ <li>Marcos Vinicius(https://github.com/kddez);</li>
+ <li>Yuri Moura(https://github.com/Moura-yuri);</li>
+ <li>Renan Silva(https://github.com/RSilva);</li>
+ <li>Renan Gonzaga(https://github.com/GonzagaRe).</li>
 </ul>
 
