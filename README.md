@@ -1,7 +1,7 @@
 <h1>YouMents - Gerenciador de Documentos</h1>
 
 <h3><strong>Introdução</strong></h3>
-<p>Este é projeto o final do curso Formação.NET, efetuado no Senac Santa Luzia. Nós fazemos parte de um projeto da <strong>ASSESPRO</strong>, que realiza uma ação social através da <strong>FORSOFT</strong>, que educa e qualifica jovens de 18 a 24 anos em situação de vulnerabilidade social, por meio de cursos de programação de computadores gratuitos.</p>
+<p>Este é o projeto final do curso Formação.NET, efetuado no Senac Santa Luzia. Nós fazemos parte de um projeto da <strong>ASSESPRO</strong>, que realiza uma ação social através do <strong>FORSOFT</strong>, que educa e qualifica jovens de 18 a 24 anos em situação de vulnerabilidade social, por meio de cursos gratuitos de programação.</p>
 
 
 <h3><strong>Sobre o projeto:</strong>
