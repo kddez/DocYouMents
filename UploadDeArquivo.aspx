@@ -1,18 +1,28 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SitePage.Master" AutoEventWireup="true" CodeBehind="UploadDeArquivo.aspx.cs" Inherits="ProjetoFinal.UploadDeArquivo" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="css/enviar.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Up Load De Arquivo</title>
+    <link rel="stylesheet" type="text/css" href="css/enviar.css" />
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-          <form id="Form1" method="post" runat="server" enctype="multipart/form-data" action="UploadDeArquivo.aspx">
-         <input id="oFile" type="file" runat="server" name="oFile">
-         <asp:button id="btnUpload" type="submit" text="Upload" runat="server"></asp:button>
-         <asp:Panel ID="frmConfirmation" Visible="False" Runat="server">
-            <asp:Label id="lblUploadResult" Runat="server"></asp:Label>
-         </asp:Panel>
-      </form>
+    <form id="Form1" method="post" runat="server" enctype="multipart/form-data" action="UploadDeArquivo.aspx">
+        <div class="content">
 
+
+            <label for="ContentPlaceHolder1_oFile">Escolher Arquivo</label>
+            <input id="oFile"  type="file" runat="server" name="oFile">
+
+
+            <asp:Button ID="btnUpload" Cssclass="btnsub" type="submit" Text="ENVIAR" runat="server"></asp:Button>
+
+            <asp:Panel ID="frmConfirmation" Visible="False" runat="server">
+                <asp:Label ID="lblUploadResult" runat="server"></asp:Label>
+            </asp:Panel>
+        </div>
+    </form>
     <br />
     <br />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [documento] WHERE [Id_documento] = @Id_documento" InsertCommand="INSERT INTO [documento] ([caminho], [tipo], [titulo], [id_usuario]) VALUES (@caminho, @tipo, @titulo, @id_usuario)" SelectCommand="SELECT [caminho], [tipo], [titulo], [id_usuario], [Id_documento] FROM [documento]" UpdateCommand="UPDATE [documento] SET [caminho] = @caminho, [tipo] = @tipo, [titulo] = @titulo, [id_usuario] = @id_usuario WHERE [Id_documento] = @Id_documento">
@@ -32,8 +42,8 @@
             <asp:Parameter Name="id_usuario" Type="String" />
             <asp:Parameter Name="Id_documento" Type="Int32" />
         </UpdateParameters>
-          </asp:SqlDataSource>
-          <br />
-          <br />
-    <asp:Label ID="ltrCookie" runat="server" Visible="false" ></asp:Label>
-    </asp:Content>
+    </asp:SqlDataSource>
+    <br />
+    <br />
+    <asp:Label ID="ltrCookie" runat="server" Visible="false"></asp:Label>
+</asp:Content>
