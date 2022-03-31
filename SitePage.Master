@@ -73,7 +73,7 @@
                 
                         <script>
                             function logout() {
-                                let text = "Deseja Sair?";
+                                let text = "Realmente deseja deixar o youments?";
                                 if (confirm(text) == true) {
                                     window.location.href = "logout.aspx";
                                 }

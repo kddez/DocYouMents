@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="conteiner">
-    <h1>Sobre nós:</h1>
 
 <h3><strong>Introdução</strong></h3>
 <p>Este é projeto o final do curso Formação.NET, efetuado no Senac Santa Luzia. Nós fazemos parte de um projeto da <strong>ASSESPRO</strong>, que realiza uma ação social através da <strong>FORSOFT</strong>, que educa e qualifica jovens de 18 a 24 anos em situação devulnerabilidade social, por meio de cursos de programação de computadores gratuitos.</p>

@@ -47,11 +47,11 @@ h3 {
 @media (min-width: 520px){
     h3 {
         font-size: 2rem;
-        margin-left: 15rem;
+        margin-left: 17rem;
         display: inline-block;
     }
     .contact {
-        margin-left: 15rem;
+        margin-left: 17rem;
         width: 450px;
     }
 }

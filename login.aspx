@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/img/logo_512.png" type="image/png"/>
   <link rel="stylesheet" type="text/css" href="css/logincad.css" />
+
+
 </head>
 <body>
     
@@ -53,18 +55,32 @@
         </div>
       </div>
 
-        <div id="cconteiner" class="cookies-container" runat="server">
-    <div class="cookies-content">
+        </div>    
+        </form>
+
+    <div id="cconteiner" class="cookies-container" runat="server">
+        <div class="cookies-content">
       <p>Permito o uso de cookies para:</p>
       <div class="cookies-pref">
         <label class="labelcss" ><input type="checkbox"  checked-data-function="analytics"/>Análise de Uso</label>
         <label class="labelcss"><input type="checkbox"  checked-data-function="marketing"/>Marketing</label>
       </div>
-      <asp:button runat="server" Text="Aceitar"  class="cookies-save" OnClick="actCookie_Click" ></asp:button>
-    </div>
-  </div>
+<button class="cookies-save" onclick="myFunction()">Aceitar</button>
             </div>
-        </form>
-  
+  </div>
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("cconteiner");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
 </body>
 </html>

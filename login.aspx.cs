@@ -13,10 +13,11 @@ namespace ProjetoFinal
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
+       
 
-        protected void btnlogar_Click(object sender, EventArgs e)
+            protected void btnlogar_Click(object sender, EventArgs e)
         {
 
 
@@ -66,19 +67,17 @@ namespace ProjetoFinal
             }
             else
             {
-                if (tbEmail.Text == string.Empty && tbSenha.Text == string.Empty)
-                {
                     txtavs.Text = "*Preencha todos os campos";
-                }
 
             }
 
         }
 
-        protected void actCookie_Click(object sender, EventArgs e)
+        protected void tbEmail_TextChanged(object sender, EventArgs e)
         {
 
         }
 
     }
-}
+
+    }
