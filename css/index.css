@@ -1,0 +1,21 @@
+﻿
+
+@media (min-width:520px){
+    #min{
+        display:none;
+    }
+
+    #max{
+
+    }
+
+
+}
+
+#min {
+    background: no-repeat;
+}
+
+#max {
+    display: none;
+}
