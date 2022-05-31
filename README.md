@@ -1,22 +1,35 @@
-Introdução
-Este é o projeto final do curso Formação.NET, liderado pelo aluno Marcos Vinicius, efetuado no Senac Santa Luzia. Nós fazemos parte de um projeto da ASSESPRO, que realiza uma ação social através do FORSOFT, que educa e qualifica jovens de 18 a 24 anos em situação de vulnerabilidade social, por meio de cursos gratuitos de programação.
+<h1>YouMents - Gerenciador de Documentos</h1>
 
-Sobre o projeto:
-Se trata de um gestor de documentos. Nossa intenção é que você possa adicionar arquivos ao sistema e, quando desejar, possa baixar em outros computadores. Todas as suas operações ficarão registradas em nosso banco de dados e poderão ser visualizadas através da nossa página de "logs".
+<h3><strong>Introdução</strong></h3>
+<p>Este é o projeto final do curso Formação.NET, liderado pelo aluno Marcos Vinicius e efetuado no Senac Santa Luzia. Nós fazemos parte de um projeto da <strong>ASSESPRO</strong>, que realiza uma ação social através do <strong>FORSOFT</strong>, que educa e qualifica jovens de 18 a 24 anos em situação de vulnerabilidade social, por meio de cursos gratuitos de programação.</p>
 
-Linguagens:
-HTML5;
-CSS3;
-JavaScript 1.8.5;
-C#;
-ASP.NET;
-SQL.
-Ferramentas:
-Visual Studio Code 1.65.2;
-Visual Studio 2019;
-SQLServer 2017.
-Participantes:
-Marcos Vinicius(https://github.com/kddez);
-Yuri Moura(https://github.com/Moura-yuri);
-Renan Silva(https://github.com/RSilva);
-Renan Gonzaga(https://github.com/GonzagaRe).
+
+<h3><strong>Sobre o projeto:</strong>
+</h3>
+<p>Se trata de um gestor de documentos. Nossa intenção é que você possa adicionar arquivos ao sistema e, quando desejar, possa baixar em outros computadores. Todas as suas operações ficarão registradas em nosso banco de dados e poderão ser visualizadas através da nossa página de "logs".</p>
+
+
+ <h3><strong>Linguagens:</strong></h3>
+<ul>
+ <li>HTML5;</li>
+ <li>CSS3;</li>
+ <li>JavaScript 1.8.5;</li>
+ <li>C#;</li>
+ <li>ASP.NET;</li>
+ <li>SQL.</li>
+</ul>
+
+ <h3><strong>Ferramentas:</strong></h3>
+<ul>
+ <li>Visual Studio Code 1.65.2;</li>
+ <li>Visual Studio 2019;</li>
+ <li>SQLServer 2017.</li>
+</ul>
+
+<h3><strong>Participantes:</strong></h3>
+<ul>
+ <li>Marcos Vinicius(https://github.com/kddez);</li>
+ <li>Yuri Moura(https://github.com/Moura-yuri);</li>
+ <li>Renan Silva(https://github.com/RSilva);</li>
+ <li>Renan Gonzaga(https://github.com/GonzagaRe).</li>
+</ul>
